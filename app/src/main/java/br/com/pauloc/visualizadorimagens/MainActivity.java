@@ -21,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
         btnImg1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                AlertDialog.Builder msgD = new AlertDialog.Builder(MainActivity.this);
+                msgD.setTitle("Imagem View");
+                msgD.setMessage("Lindo demais!");
+                msgD.setNeutralButton("Concordo", null);
+                msgD.show();
                 imageView1.setVisibility(View.VISIBLE);
                 imageView2.setVisibility(View.INVISIBLE);
             }
@@ -29,19 +34,17 @@ public class MainActivity extends AppCompatActivity {
         btnImg2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Alert
+                AlertDialog.Builder msgD = new AlertDialog.Builder(MainActivity.this);
+                msgD.setTitle("Imagem View");
+                msgD.setMessage("Que cara engraçado rsrsrs!");
+                msgD.setNeutralButton("Concordo", null);
+                msgD.show();
                 imageView2.setVisibility(View.VISIBLE);
                 imageView1.setVisibility(View.INVISIBLE);
+
 
             }
         });
 
-        public void class Alert{
-            AlertDialog.Builder msgD = new AlertDialog.Builder(MainActivity.this);
-            msgD.setTitle("Imagem View");
-            msgD.setMessage("Lindo demais!");
-            msgD.setNeutralButton("Concordo", null);
-            msgD.show();
-        }
     }
 }
