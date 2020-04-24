@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="207dp"
+        android:layout_height="158dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/img2"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="218dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/img1"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/button_img2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_imagem_2"
+        android:layout_below="@+id/button_img1"/>
+
+    <Button
+        android:id="@+id/button_img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mostrar_imagem_1"
+        android:layout_below="@+id/imageView2"/>
+</RelativeLayout>

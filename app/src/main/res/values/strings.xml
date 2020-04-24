@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VisualizadorImagens</string>
+    <string name="mostrar_imagem_2">Mostrar imagem 2</string>
+    <string name="mostrar_imagem_1">Mostrar imagem 1</string>
+</resources>
